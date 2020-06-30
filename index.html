@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+    <div id="divOptions1">
+        <table id="O1Table1">
+            <tr>
+                <td>
+                    <select id="fontes" onchange="setFont(this[this.selectedIndex].value)">
+                        <option value="Arial" id="Arial">Arial</option>
+                        <option value="Times New Roman" id="Times">Times New Roman</option>
+                        <option value="Calibri" id="Calibri">Calibri</option>
+                        <option value="letters" id="letters">Letters For Learners</option>
+                        <option value="champagne" id="champagne">Champagne & Limousines</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <td><select id="numFontes" onchange="Font(this[this.selectedIndex].value)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select></td>
+            </tr>
+        </table>
+        <table id="O1Table2">
+            <tr>
+                <td><a href="#" onclick="bold()"><strong>N</strong></a></td>
+                <td><a href="#" onclick="italic()"><em>I</em></a></td>
+                <td><a href="#" onclick="underline()" style="text-decoration: underline;">S</a></td>
+                <td><a href="#" onclick="lineThrough()" style="text-decoration: line-through;">A</a></td>
+                <td><a href="#" onclick="superscript()" style="margin-top: 1px;">x<sup style="color: blue;">2</sup></a></td>
+                <td><a href="#" onclick="subscript()">x<sub style="color: blue;">2</sub></a></td>
+                <td><a href="#" onclick="indent()"><img src="Imagens/indent.png" class="imageLink"></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="divOptions2">
+        <table>
+            <tr>
+                <td><a href="#" onclick="FontBigger()"><img src="Imagens/FontBigger.png" class="imageLink"></a></td>
+                <td><a href="#" onclick="FontSmaller()"><img src="Imagens/FontSmaller.png" class="imageLink"></a></td>
+                <td><a href="#" onclick="UnList()"><img src="Imagens/UL.png" class="imageLink"></a></td>
+                <td><a href="#" onclick="OrList()"><img src="Imagens/OL.png" class="imageLink"></a></td>
+                <td><select id="color" onchange="color(this[this.selectedIndex].value)">
+                    <option value="#000000">Preto</option>
+                    <option value="#ffffff" style="color: white; background-color: black;">Branco</option>
+                    <option value="#ff0000" style="color: red;">Vermelho</option>
+                    <option value="#ffa1a1" style="color: #ffa1a1;">Rosa</option>
+                    <option value="#00ff00" style="color: #00ff00;">Verde</option> 
+                    <option value="#1b5b0d" style="color: #1b5b0d;">Verde Musgo</option>
+                    <option value="#0000ff" style="color: blue;">Azul</option>
+                    <option value="#0d125b" style="color: #0d125b;">Azul Marinho</option>
+                    <option value="#555555" style="color: #555555;">Cinza</option>
+                    <option value="#8a2be2" style="color: #8a2be2;">Violeta</option>
+                    <option value="#72321e" style="color: #72321e;">Marrom Claro</option>
+                    <option value="#4a1d0f" style="color: #4a1d0f;">Marrom Escuro</option>
+                    <option value="#e6e600" style="color: #e6e600;">Amarelo</option>
+                    <option value="#ffa500" style="color: #ffa500;">Laranja Claro</option>
+                    <option value="#ff4500" style="color: #ff4500 ;">Laranja</option>
+                    <option value="#00fff2" style="color: #00fff2;">Ciano</option>
+                    <option value="#451136" style="color: #451136;">Roxo</option>
+                    <option value="#e9967a " style="color: #e9967a ;">Salmão</option>
+                </select></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><img src="Imagens/Line.png" style="padding-right: 3px;" class="imageLink"></td>
+                <td><select id="selectLineHeight" onchange="Line(this[this.selectedIndex].value)">
+                    <option value="1">1</option>
+                    <option value="1.25">1,25</option>
+                    <option value="1.5">1,5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2,5</option>
+                    <option value="3">3</option>
+                </select></td>
+                <td><a href="#" onclick="alignLeft()"><img src="Imagens/alignLeft.png" class="imageLink"></a></td>
+                <td><a href="#" onclick="alignCenter()"><img src="Imagens/alignCenter.png" class="imageLink" style="width: 17px"></a></td>
+                <td><a href="#" onclick="alignRight()"><img src="Imagens/alignRight.png" class="imageLink"></a></td>
+                <td><a href="#" onclick="Justify()"><img src="Imagens/Justify.png" class="imageLink" style="padding-top: 4px;"></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="divOptions3">
+        <table>
+            <tr>
+                <td><img src="Imagens/hiline.png" class="imageLink"></td>
+                <td><select id="colorHiline" onchange="hiline(this[this.selectedIndex].value)">
+                    <option value="#000000" style="background-color: black; color: white;">Preto</option>
+                    <option value="#ffffff">Branco</option>
+                    <option value="#ff0000" style="background-color: red;">Vermelho</option>
+                    <option value="#ffa1a1" style="background-color: #ffa1a1;">Rosa</option>
+                    <option value="#00ff00" style="background-color: #00ff00;">Verde</option> 
+                    <option value="#1b5b0d" style="background-color: #1b5b0d;">Verde Musgo</option>
+                    <option value="#0000ff" style="background-color: blue;">Azul</option>
+                    <option value="#0d125b" style="background-color: #0d125b;">Azul Marinho</option>
+                    <option value="#555555" style="background-color: #555555;">Cinza</option>
+                    <option value="#8a2be2" style="background-color: #8a2be2;">Violeta</option>
+                    <option value="#72321e" style="background-color: #72321e;">Marrom Claro</option>
+                    <option value="#4a1d0f" style="background-color: #4a1d0f;">Marrom Escuro</option>
+                    <option value="#ffff16" style="background-color: #ffff16;">Amarelo</option>
+                    <option value="#ffa500" style="background-color: #ffa500;">Laranja Claro</option>
+                    <option value="#ff4500" style="background-color: #ff4500 ;">Laranja</option>
+                    <option value="#00fff2" style="background-color: #00fff2;">Ciano</option>
+                    <option value="#451136" style="background-color: #451136;">Roxo</option>
+                    <option value="#e9967a " style="background-color: #e9967a ;">Salmão</option>
+                </select></td>
+                <td><a href="#" onclick="terminar()" id="finish" style="width: 80px;">Terminar</a></td>
+            </tr>
+        </table>
+       <table>
+            <tr>
+                <td><a href="#" onclick="link()"><img src="Imagens/link.png" class="imageLink"></a></td>
+                <td><input type="url" id="URLlink" style="width: 135px; height: 20px;"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="divOptions4">
+        <table>
+            <tr>
+                <td> 
+                    <select id="char" onchange="insert(this[this.selectedIndex].value)">
+                        <option value="©">©</option>
+                        <option value="®">®</option>
+                        <option value="½">½</option>
+                        <option value="¼">¼</option>
+                        <option value="¾">¾</option>
+                        <option value="¥">¥</option>
+                        <option value="£">£</option>
+                        <option value="€">€</option>
+                        <option value="§">§</option>
+                        <option value="™">™</option>
+                        <option value="‰">‰</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="emojis" onchange="insert(this[this.selectedIndex].value)">
+                        <option value="֍">֍</option>
+                        <option value="☺">☺</option>
+                        <option value="☻">☻</option>
+                        <option value="♥">♥</option>
+                        <option value="♫">♫</option>
+                        <option value="←">←</option>
+                        <option value="↑">↑</option>
+                        <option value="→">→</option>
+                        <option value="↓">↓</option>
+                        <option value="↔">↔</option>
+                        <option value="↕">↕</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+       
+        
+    </div>
+    <div id="menu">
+        <a href="#" onclick="submenu1()" class="botãoSave">Salvar</a>
+            <div id="saveFile" style="text-align: center;">
+                <input type="text" id="fileName" style="height: 20px; margin-top: 10px;">
+                <a href="#" onclick="saveFile()" class="button">Salvar</a>
+            </div>
+        <a href="#" onclick="submenu2()" class="botãoSave">Carregar</a>
+            <ul id="listFiles">
+            </ul>
+        <a href="#" onclick="newFile()" class="botãoSave">Novo Arquivo</a>
+    </div>
+    <div id="arquivo" contenteditable="true"></div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+@font-face{
+    font-family: "letters";
+    src: url("Fontes/Letters\ for\ Learners.ttf");
+}
+
+@font-face{
+    font-family: "champagne";
+    src: url("Fontes/Champagne\ &\ Limousines.ttf");
+}
+
+body table{
+    text-align: center;
+}
+
+table#O1Table2 {
+    margin-left: 3px;
+}
+
+div#divOptions1{
+    width: 200px;
+    display: inline-block;
+    margin-left: 380px;
+    margin-bottom: 10px;
+    border-right: 2px solid #444444;
+}
+
+div#divOptions3{
+    width: 200px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-right: 2px solid #444444;
+}
+
+div#divOptions2{
+    width: 200px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-right: 2px solid #444444;
+}
+
+div#divOptions4{
+    width: 200px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+tr a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    background-color: #dddddd;
+    margin-left: -3px;
+}
+
+tr a:hover{
+    background-color: #b9b9b9;
+}
+
+div#arquivo {
+    width: 820px;
+    height: 1168px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    border: 1px solid black;
+    margin-left: 320px;
+    padding: 10px;
+}
+
+option#Times{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+option#Arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+option#Calibri{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+option#letters{
+    font-family: 'letters';
+}
+
+option#champagne{
+    font-family: 'champagne';
+}
+
+select#fontes {
+    height: 26px;
+    width: 137px;
+}
+
+select#numFontes {
+    height: 26px;
+    width: 40px;
+}
+
+img.imageLink{
+    width: 19px;
+    padding-top: 3px;
+}
+
+select#selectLineHeight{
+    height: 26px;
+    width: 43px;
+    margin-right: 5px;
+}
+
+select#color {
+    height: 26px;
+    width: 74px;
+    margin-right: 5px;
+}
+
+select#colorHiline {
+    height: 26px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+div#menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #dddddd;
+    height: 625px;
+    width: 200px;
+}
+
+a.botãoSave{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    background-color: #dddddd;
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 25pt;
+    font-family: 'champagne';
+}
+
+a.botãoSave:hover{
+    background-color: #b9b9b9;
+}
+
+iframe#iFrame{
+    margin-left: 200px;
+    width: 1155px;
+    height: 605px;
+}
+
+div#saveFile{
+    display: none;
+}
+
+a.button{
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 25px;
+    width: 60px;
+    height: 25px;
+    background-color: #c5c5c5;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul#listFiles{
+    list-style: none;
+    display: none;
+}
+
+ul#listFiles li{
+    display: block;
+    width: 200px;
+    text-align: left;
+    margin-left: -30px;
+}
+
+ul#listFiles a{
+    font-size: 20pt;
+    font-family: 'champagne';
+    color: black;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+ul#listFiles a img{
+    width: 20px;
+    float: right;
+}
+
+select#char{
+    width: 50px;
+    height: 26px;
+    font-size: 15pt;
+}
+
+select#emojis{
+    width: 50px;
+    height: 26px;
+    font-size: 15pt;
+}
